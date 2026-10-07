@@ -1,0 +1,25 @@
+import { Link } from "react-router-dom";
+
+function Sidebar() {
+  return (
+    <div className="sidebar">
+      <h2>Placement Portal</h2>
+
+      <nav>
+        <Link to="/dashboard">🏠 Dashboard</Link>
+        <Link to="/jobs">💼 Job Opportunities</Link>
+        <Link to="/applications">📋 My Applications</Link>
+        <Link to="/interviews">📅 Interviews</Link>
+        <Link to="/analytics">📊 Analytics</Link>
+        <Link to="/notifications">🔔 Notifications</Link>
+        <Link to="/profile">👤 Profile</Link>
+      </nav>
+
+      <Link className="logout" to="/">
+        🚪 Logout
+      </Link>
+    </div>
+  );
+}
+
+export default Sidebar;
